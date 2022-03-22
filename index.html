@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Social ReciclArte</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleP.css">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+  
+  <header>  
+
+    <a href="#" onclick="home()">
+      <img src="Img/logo.png" alt="" class="logo">
+    </a>
+
+    <nav>
+      <ul>
+        <li class="menu">
+          <a href="#" onclick="home()">home</a>
+        </li>
+
+        <li class="menu">
+          <a href="#">projeto</a>
+        </li>
+
+        <li class="menu">
+          <a href="#" onclick="participantes()">alunos</a>
+        </li>
+
+        <li class="menu">
+          <a href="#" onclick="footer()">fale conosco</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- PRIMEIRA SEÇÃO -->
+    <section id="telaPrincipal" class="telas">
+
+      <div id="cima" class="detalhes"></div>
+      <div id="baixo" class="detalhes"></div>
+      
+      <div class="fundoImg1" onclick="intuito()">
+        <img src="Img/logo.png" alt="">
+      </div>
+
+      <div class="fundoImg2" onmouseout="sair()">
+        <h1>Projeto Social ReciclArte</h1>
+
+        <p>
+          O Projeto Social ReciclArte foi criado no dia 28 de Agosto de 2018 pelo músico e educador musical Bruno Santos no 
+          destrito de Maracajaú na cidade de Maxaranguape e tem o intuito de transformar a vida dos moradores da cidade 
+          através do ensino da música e da pratica da reciclagem.
+          
+        </p>
+
+        <p>
+          O projeto estará disponibilizando aulas de musica <em>(teoria musical, canto coral, flauta, violão, teclado e percussão)</em> para moradores carentes da 
+          cidade.
+          Com pratica da reciclagem e do reaproveitamento iremos contruir nossos próprios instrumentos musicais, tais como: <em>flautas (feitas com cano pvc) e
+          tambores (feitos com garrafas PET, baldes plásticos e latas de metais).</em>
+          Dessa forma, todos terão seus próprios instrumentos com materia prima barata e economica, porém com uma boa qualidade sonora. 
+        </p>
+
+        <p>Sabemos o quanto a música é poderosa para a transformação da sociedade. Sabemos o quanto o ensino da música irá ajudar na formação 
+          de caráter das nossas crianças, jovens e adolecentes fazendo com que cresçam com um futuro brilhante para o futuro.
+        </p>
+      </div>
+
+
+    </section>
+
+    <!-- SEGUNDA SEÇÃO -->
+    <section class="telas"></section>
+
+    <!-- TERCEIRA SEÇÃO -->
+    <section id="alunos" class="telas">
+      <div class="painel-alunos">
+        <img id="sara" class="alunos" src="Img/Sara.jpg" alt="" />
+          
+          <img id="debora" class="alunos" src="Img/Débora.jpg" alt=""/>
+          
+          <img id="fernanda" class="alunos" src="Img/Fernanda.jpg" alt=""/>
+          
+          <img id="alexandre" class="alunos" src="Img/Alexandre.png" alt=""/>
+          
+          <img id="bianca" class="alunos" src="Img/Bianca.png" alt=""/>
+          
+          <img id="douglas" class="alunos" src="Img/Douglas.jpg" alt=""/>
+          
+          <img id="nanda" class="alunos" src="Img/Fernanda 2.jpg" alt=""/>
+          
+          <img id="dandara" class="alunos" src="Img/Dandara.jpg" alt=""/>
+          
+          <img id="clara" class="alunos" src="Img/Clara.jpg" alt=""/>
+      </div>
+
+      <div class="painel-alunos2">
+        
+        <div id="sara1" class="alunos1" onclick="bioSara()" onmouseenter="alunaSara()" onmouseout="fecharNome()">
+          Sara
+        </div>
+        
+        <div id="debora1" class="alunos1" onmouseenter="alunaDebora()" onmouseout="fecharNome()">
+          Débora
+        </div>
+        
+        <div id="fernanda1" class="alunos1" onmouseenter="alunaFernanda()" onmouseout="fecharNome()">
+          Vª <br />
+          Fernanda
+        </div>
+        
+        <div id="alexandre1" class="alunos1" onmouseenter="alunoAlexandre()" onmouseout="fecharNome()">
+          Alexandre
+        </div>
+        
+        <div id="bianca1" class="alunos1" onmouseenter="alunaBianca()"  onmouseout="fecharNome()">
+          Bianca
+        </div>
+        
+        <div id="douglas1" class="alunos1" onmouseenter="alunoDouglas()" onmouseout="fecharNome()">
+          Douglas
+        </div>
+       
+        <div id="nanda1" class="alunos1" onmouseenter="alunaNanda()" onmouseout="fecharNome()">
+          Fernanda
+        </div>
+        
+        <div id="dandara1" class="alunos1" onmouseenter="alunaDandara()" onmouseout="fecharNome()">
+          Dandara
+        </div>
+        
+        <div id="clara1" class="alunos1" onmouseenter="alunaClara()" onmouseout="fecharNome()">
+          Clara
+        </div>
+    </div>
+    </section>
+
+    <section class="telas"></section>
+  </main>
+
+  <footer>
+
+    <a href="#">
+      <!-- <i class="fa-solid fa-donw"></i> -->
+      <i class="fa-solid fa-up"></i>
+    </a>
+  </footer>
+
+
+  <script src="js/index.js"></script>
+  <script src="js/alunos.js"></script>
+</body>
+</html>

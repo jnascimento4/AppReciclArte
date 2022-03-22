@@ -1,0 +1,240 @@
+body {
+  background-color: var(--branco);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro';
+}
+/* PALHETA DE CORES */
+:root {
+  --branco: white;
+  --preto: black;
+  --verde: #35a404;
+  --verde-claro: #309c0293;
+  --cinza: #d8d8d8bd;
+}
+
+
+@media (min-width: 620px) {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+/* CONFIGURAÇÕES DE ANIMAÇÕES */
+main, .telas, #telaPrinicipal, footer {
+  animation: subir 500ms;
+}
+
+@keyframes subir {
+  from {
+    top: 2000px;
+    opacity: 0.2;
+  }
+  to {
+    top: 105px;
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* CABEÇALHO E MENU DE NAVEGAÇÃO */
+header {
+  width: 100%;
+  height: 105px;
+  position: fixed;
+  top: 0;
+  border: 0.2px solid var(--verde);
+}
+.logo {
+  width: 350px;
+  height: 90px;
+  margin: 5px 200px;
+}
+nav {
+  float: right;
+  margin-right: 100px;
+  padding: 34px;
+}
+.menu {
+  display: inline-block;
+  list-style: none;
+}
+.menu a {
+  margin-left: 30px;
+  color: var(--verde);
+  font-size: 18pt;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: var(--branco);
+  border: solid var(--verde);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--verde-claro);
+  text-shadow: 1px 0.5px var(--preto);
+  text-decoration: underline;
+  transition: 0.3s;
+  margin-left: 14.5px;
+}
+/* CONFIGURAÇÕES DAS TELAS PRINCIPAIS*/
+main {
+  width: 100%;
+  height: 653px;
+  position: fixed;
+  top: 105px;
+}
+.telas {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+}
+/* TELA PRINCIPAL */
+#telaPrincipal {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  display: block;
+}
+.detalhes {
+  width: 100%;
+  height: 50%;
+}
+#cima {
+  background-color: var(--branco);
+}
+#baixo {
+  background-color: var(--verde);
+}
+.fundoImg1 {
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  border: dashed var(--verde-claro);
+  position: absolute;
+  top: 70px;
+  left: 20%;
+  background-color: var(--branco);
+  cursor: pointer;
+}
+.fundoImg1 img {
+  width: 100%;
+  height: 400px;
+  animation: aparecer 1.2s linear;
+}
+.fundoImg2 {
+  width: 60%;
+  height: 80%;
+  border-radius: 20px;
+  border: solid var(--verde-claro);
+  position: absolute;
+  top: 70px;
+  left: 20%;
+  background-color: var(--cinza);
+  display: none;
+}
+.fundoImg2 h1, p {
+  color: var(--verde);
+  margin: 20px 0px;
+  text-align: center;
+}
+.fundoImg2 h1{
+  font-size: 25pt;
+  text-decoration: underline;
+  text-shadow: 1px 1px var(--preto);
+}
+.fundoImg2 p {
+  color: var(--verde);
+  margin: 25px;
+  font-size: 16pt;
+  text-indent: 20px;
+  text-align: justify;
+  text-shadow: 1px 0.5px var(--preto);
+}
+
+/* TERCEIRA TELA */
+#alunos {
+  background-color: var(--verde);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 105px;
+  left: -77px;
+  display: none;
+}
+.painel-alunos {
+  position: absolute;
+  background-color: var(--cinza);
+  width: 90%;
+  height: 80%;
+  border: solid var(--branco);
+  border-radius: 20px;
+  margin: 25px 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.alunos {
+  width: 250px;
+  height: 250px;
+  border: solid var(--verde);
+  border-radius: 50%;
+  margin: 0px;
+}
+.alunos:hover {
+  opacity: 0.4;
+  transition: 0.8s;
+}
+
+.painel-alunos2 {
+  position: absolute;
+  background-color: transparent;
+  width: 90%;
+  height: 80%;
+  border: solid var(--branco);
+  border-radius: 20px;
+  margin: 25px 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.alunos1 {
+  width: 250px;
+  height: 250px;
+  border: solid var(--verde);
+  border-radius: 50%;
+  position: relative;
+  color: var(--verde);
+  font-size: 40pt;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px var(--preto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONFIGURAÇÕES DO RODAPÉ E DE CONTATOS  */
+footer {
+  width: 100%;
+  height: 653px;
+  position: absolute;
+  top: 105px;
+  background-color: red;
+  display: none;
+}
+
+
+}

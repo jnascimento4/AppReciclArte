@@ -1,0 +1,78 @@
+
+/*ESTILOS DE TEXTOS*/
+li.menu {
+    background: #42f223;
+    color: black;
+    list-style: none;
+    width: 110px;
+    border: solid white;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 30px;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 14pt;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+    left: 30px;
+  }
+  li.menu:hover {
+    background: green;
+    color: white;
+    list-style: none;
+    width: 110px;
+    border: solid black;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 30px;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 14pt;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    top: 50px;
+    left: 30px;
+  }
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 1px green;
+    font-size: 26pt;
+    font-family: Arial;
+    font-style: italic;
+    color: black;
+  }
+  h1#continuar {
+    color: green;
+    margin-top: 30px;
+    animation: piscar 1s infinite;
+  }
+  @keyframes piscar {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  h1.estudantes {
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18pt;
+    text-align: justify;
+    text-indent: 12pt;
+    margin: 12px;
+  }
+  a.infor {
+    color: green;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+  }
